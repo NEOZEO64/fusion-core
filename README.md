@@ -1,46 +1,88 @@
-# Roadmap FUSION CORE
+# FUSION CORE (synthesizer)
 
-- Kein Ziel, nur ausprobieren, schauen, wie weit ich komme
-    - Arbeiten mit Schaltplänen
-        - Was ist möglich mit analogen Schaltungen
-    - Designen von Front-Plates mit Fusion 360
-- Lernen, lernen, lernen
-- Projekt zu groß, Aufteilung in Einzelprojekte nötig
-- Grundsätzlich:
+![](./img/Banner.png)
 
-- Nebenbei: 
-    - Make Bücher durchlesen
-    - The Art of Electronics durchlesen
-    - Schaltpläne testen
+## Aims
 
-- Kompetenzen:
-    - Überblick über alle bekannten elektronischen Bauteile kriegen
-    - Was ist mit ihnen möglich? Was sind Edge-Cases?
-    - Schaltplan-Design
-    - Großes Projekt laufen lassen
+- No aim lol
+- Get to know delicious circuits (experimenting a lot)
+- Use them in crude ways to generate sounds
+- Learn how to design circuits & professionally manufacture them with KiCad
+- Learn whats possible with analog circuits and what's not
+- Have a lot of fun without the need of programming
 
-## Spezifikationen
+- Get an overview of electronic parts out there
+- Manage a big project
+- Make ambient dub techno at the end lol
 
-- ±12V, 5V Modul-Power-Supply 
-- 16cm hoch, breit: n * 2cm
 
-- PCBs:
-    - Standard-Grün
-- Frontplate Material
-    - Holz, lasergecuttet, Eingravierungen
-- Knobs: Angeschlossen über Stecker an die Platine
-	- Krimp-Zange bestellen
+## Resources
+- Books
+    - Make: Analog Synthesizers (from Music from outer space)
+    - The Art of Electronics
+    - Make: Electronics & Make: More Electronics
+    - Encyclopedia of Electronic Components (Vol. 1, Vol. 2, Vol. 3)
+    - Engineers Mini-Notebooks
+- Internet
+    - https://www.lookmumnocomputer.com/
+    - https://www.eddybergman.com/
+    - https://www.birthofasynth.com/Thomas_Henry/TH_main.html
+    - https://musicfromouterspace.com/
+    - https://www.schmitzbits.de/index.html
+    - https://www.ericasynths.lv/
+    - and a lot more!
+- University for background theory
+    - Electronics I & II
+    - Signals & Systems, Control Systems
+    - Communications Engineering
+    - Computer Engineering
+
+
+## Gallery
+
+DIY dual 12V power supply + 5V (combined switched mode & linear regulated)
+<img src="./img/PSU.jpg" width=40%>
+
+My first module! Still very early, but reliable 1V/oct frequency control and all outputs (Triangle, Saw, Rectangle) have the same voltage levels
+
+<img src="./img/VCO 1st Module.jpg" width=40%>
+<img src="./img/VCO 1st PCB.jpg" width=40%>
+
+Obviously go to Look Mum no Computer concert!
+<img src="./img/LMNC.jpeg" width=40%>
+
+Test circuits with chaotic wiring
+
+<img src="./img/VCO 1st Test.jpg" width=40%>
+<img src="./img/VCO Test.jpg" width=40%>
+
+Borrow devices from student research center
+<img src="./img/Devices.jpg" width=40%>
+
+## Module Specifications
+- ±12V, 5V Power Supply
+- 16cm high, n * 2cm wide (Eurorack is too small, Cosmo too large)
+
+- PCB-Color: Green
+- Different front-plate materials (wooden, metal, PVC)
 
 
 # Level 1: Basic Synth
 
-## Kapitel 1: Gehäuse
+## Chapter 1: Case
+- It should be a wooden box sprayed black with fancy neon art or something
 
-<img src="img/Synth Case.jpg"  width=500>
 
-## Kapitel 2: Netzteil
+## Chapter 2: PSU
+- found a better one than my own diy thing (RT65-B)
 
-## Kapitel 3: 3x VCO 
+## Chapter 3: 3x VCO 
+- still experimenting and learning how to design modules with input / output protection
+- but first VCO tests work based on AS3340/CEM3340
+
+
+<img src="./img/Testing.jpg" width=80%>
+
 
 Knobs:
 - Big Frequency Knob
@@ -58,7 +100,10 @@ Outputs:
 - Sawtooth
 - Rectangle
 
-## Kapitel 4: 2x VCF
+## Chapter 4: 2x VCF
+- First design workes based on LM13700 Operational Transconductance Amplifier, but I want to make sure it workes in every situation and the output is in voltage bounds
+
+
 Knobs:
 - Cutoff
 - Resonance
@@ -74,9 +119,9 @@ Output:
 - Band pass
 - High Pass
 
-## Kapitel 5: 4x VCA
+## Chapter 5: 4x VCA
 
-VU Meter!
+VU Meter?
 
 Knobs:
 - Volume
@@ -88,7 +133,7 @@ Inputs:
 Outputs:
 - Audio out
 
-## Kapitel 6: 2x 4-channel Mixer
+## Chapter 6: 2x 4-channel Mixer
 Knobs:
 - Channel 1 Volume
 - Channel 2 Volume
@@ -104,7 +149,7 @@ Inputs:
 Output
 - Audio Sum
 
-## Kapitel 7: 1x Teensy Reverb / Echo / DISTORTION
+## Chapter 7: Teensy 4.1 as digital signal processor for reverb / echo / distortion effects
 
 Knobs:
 - Mode
@@ -121,8 +166,8 @@ Output:
 - Right Audio Out
 
 
-## Kapitel 8: Audio Out (Kopfhörer, direkt Boxen)
-- Trennung Input / Output durch OpAmp?
+## Chapter 8: Audio Out (Headphones, Line Out)
+- Input buffering Input / Output durch OpAmp?
 
 - Dual Mono to Stereo
 - Headphone Out
@@ -135,22 +180,22 @@ Output:
 
 # Level 5: Beat Extension
 
-## Kapitel 1: Splitter
+## Chapter 1: Splitter
 
-## Kapitel 2: Clock
+## Chapter 2: Clock
 
-## Kapitel 3: Clock Divider
+## Chapter 3: Clock Divider
 
-## Kapitel 4: Counter
+## Chapter 4: Counter
 
-## Kapitel 5: ADSR
+## Chapter 5: ADSR
 
-## Kapitel 6: Manual Trigger / Gate
+## Chapter 6: Manual Trigger / Gate
 
-## Kapitel 7: Sample & Hold
+## Chapter 7: Sample & Hold
 
-## Kapitel 8: LFO
+## Chapter 8: LFO
 
-## Kapitel 9: Constant voltage source
+## Chapter 9: Constant voltage source
 
-## Kapitel 10: Signal voltage offset
+## Chapter 10: Signal voltage offset
