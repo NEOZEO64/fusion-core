@@ -41,23 +41,24 @@
 ## Gallery
 
 DIY dual 12V power supply + 5V (combined switched mode & linear regulated)
-<img src="./img/PSU.jpg" width=40%>
+<img src="./img/PSU.jpg" width=60%>
 
 My first module! Still very early, but reliable 1V/oct frequency control and all outputs (Triangle, Saw, Rectangle) have the same voltage levels
 
-<img src="./img/VCO 1st Module.jpg" width=40%>
-<img src="./img/VCO 1st PCB.jpg" width=40%>
+<img src="./img/VCO 1st Module.jpg" width=30%>
+<img src="./img/VCO 1st PCB.jpg" width=30%>
 
 Obviously go to Look Mum no Computer concert!
+
 <img src="./img/LMNC.jpeg" width=40%>
 
 Test circuits with chaotic wiring
 
-<img src="./img/VCO 1st Test.jpg" width=40%>
-<img src="./img/VCO Test.jpg" width=40%>
+<img src="./img/VCO 1st Test.jpg" width=30%>
+<img src="./img/VCO Test.jpg" width=30%>
 
 Borrow devices from student research center
-<img src="./img/Devices.jpg" width=40%>
+<img src="./img/Devices.jpg" width=60%>
 
 ## Module Specifications
 - ±12V, 5V Power Supply
